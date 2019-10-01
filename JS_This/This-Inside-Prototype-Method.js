@@ -1,7 +1,7 @@
 /**
  * The this Keyword Inside a Prototype Method Refers to a Constructor Instance
- * 
- * When used in functions added to a constructor’s prototype property, this refers to the instance on which the method is invoked.
+ * When used in functions added to a constructor’s prototype property, 
+ * this refers to the instance on which the method is invoked.
  */
 
 var Person = function(x){

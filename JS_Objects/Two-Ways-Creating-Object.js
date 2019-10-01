@@ -12,6 +12,6 @@ var cody2 = {
   age: 23,
   gender: 'male',
   getGender: function() {return cody.gender;}
-  };
-  // notice the last property has no comma after it
-  console.log(cody2); // logs cody object and properties
+};
+// notice the last property has no comma after it
+console.log(cody2); // logs cody object and properties

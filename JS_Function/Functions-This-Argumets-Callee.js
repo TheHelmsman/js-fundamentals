@@ -8,7 +8,8 @@ var myObject1 = {
   myMethod: function(){console.log(this);}
 };
 myObject1.myMethod(); // logs 'myObject1'
-var myObject2 = function(){console.log(this);}; myObject2(); // logs window
+var myObject2 = function(){console.log(this);}; 
+myObject2(); // logs window
 
 var foo = function foo() {
   console.log(arguments.callee); // logs foo()

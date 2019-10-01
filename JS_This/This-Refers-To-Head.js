@@ -1,5 +1,6 @@
 /**
- * in ES3, this loses its way and refers to the head object (window object in browsers), instead of the object within which the function is defined.
+ * in ES3, this loses its way and refers to the head object (window object in browsers), 
+ * instead of the object within which the function is defined.
  * The good news is that this will be fixed in ES5.
  */
 

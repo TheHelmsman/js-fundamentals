@@ -1,15 +1,15 @@
 // function pattern
 var myFunction = function(){return 'foo'}; 
 console.log(myFunction()); // log 'foo'
-    // method pattern
+// method pattern
 var myObject = {myFunction: function(){return 'bar';}} 
 console.log(myObject.myFunction()); // log 'bar'
-    // constructor pattern
-    var Cody = function(){
-       this.living = true;
-       this.age = 33;
-       this.gender = 'male';
-       this.getGender = function() {return this.gender;};
+// constructor pattern
+var Cody = function(){
+    this.living = true;
+    this.age = 33;
+    this.gender = 'male';
+    this.getGender = function() {return this.gender;};
 }
 var cody = new Cody(); // invoke via Cody constructor console.log(cody); // logs cody object and properties
     // apply() and call() pattern

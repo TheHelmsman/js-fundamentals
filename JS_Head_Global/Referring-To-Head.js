@@ -1,7 +1,7 @@
 /**
  * There are typically two ways to reference the head object. 
  * The first way is to simply reference the name given to the head object 
- * (e.g., in a web browser this would be win dow). 
+ * (e.g., in a web browser this would be window). 
  * The second way is to use the this keyword in the global scope. 
  * Each of these are detailed in the code below.
  */
