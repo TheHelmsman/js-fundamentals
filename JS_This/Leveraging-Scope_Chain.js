@@ -1,11 +1,10 @@
 /**
  * Leveraging the Scope Chain
  */
-
-
 var myObject = {
 
   myProperty: 'I can see the light',
+  
   myMethod: function() {
 
     var that = this; /* store a reference to this (i.e., myObject) in myMethod scope */

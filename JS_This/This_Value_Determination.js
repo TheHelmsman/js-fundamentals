@@ -7,7 +7,9 @@ var cody = {
   living : true,
   age : 23,
   gender : 'male',
-  getGender : function() {return cody.gender;}
+  getGender : function() {
+    return cody.gender;
+  }
 };
 console.log(cody.getGender()); // logs 'male'
 
@@ -15,16 +17,19 @@ var cody2 = {
   living: true,
   age: 23,
   gender: 'male',
-  getGender: function() {return this.gender;}
+  getGender: function() {
+    return this.gender;
+  }
 };
 console.log(cody2.getGender()); // logs 'male'
 
 /**
  * Clearly, the value of this is based on the context in which the function is being called.
  */
-
 var foo = 'foo';
-var myObject = {foo: 'I am myObject.foo'};
+var myObject = {
+  foo: 'I am myObject.foo'
+};
 var sayFoo = function() { 
   console.log(this['foo']);
 };

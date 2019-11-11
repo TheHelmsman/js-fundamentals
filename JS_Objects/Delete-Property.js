@@ -1,5 +1,8 @@
-var foo = {bar: 'bar'};
+var foo = {
+  bar: 'bar'
+};
 delete foo.bar;
+
 console.log('bar' in foo); // logs false, 
 
 /**

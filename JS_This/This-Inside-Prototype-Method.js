@@ -5,7 +5,9 @@
  */
 
 var Person = function(x){
-  if(x){ this.fullName = x };
+  if(x) { 
+    this.fullName = x 
+  };
 };
 
 //  When using this, the method can refer to the instance invoking it (and thus its properties).
@@ -16,14 +18,18 @@ Person.prototype.whatIsMyFullName = function(){
 var cody = new Person('cody lindley');
 var lisa = new Person('lisa lindley');
 
-/* call the inherited whatIsMyFullName method, which uses this to refer to
-the instance */
+/* 
+call the inherited whatIsMyFullName method, 
+which uses this to refer to the instance 
+*/
 console.log(cody.whatIsMyFullName(), lisa.whatIsMyFullName());
 
-/* The prototype chain is still in effect, so if the instance does not have a
+/* 
+The prototype chain is still in effect, so if the instance does not have a
 fullName property, it will look for it in the prototype chain. Below, we add
 a fullName property to both the Person prototype and the Object prototype.
-See notes. */
+See notes. 
+*/
 Object.prototype.fullName = 'John Doe';
 
 var john = new Person(); // no argument is passed, so fullName is not added to instance

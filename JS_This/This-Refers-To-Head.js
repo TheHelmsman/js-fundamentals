@@ -31,6 +31,7 @@ var foo = {
     console.log(this); /* the this keyword here will be a reference to foo object */
   }
 }
+
 foo.func1(function(){ 
   console.log(this) 
 });

@@ -9,16 +9,18 @@
 var foo = 'bar';
 windowRef1 = window; 
 windowRef2 = this;
-console.log(windowRef1, windowRef2); // logs reference to window object
-console.log(windowRef1.foo, windowRef2.foo); // logs 'bar', 'bar'
+
+console.log(windowRef1, windowRef2);          // logs reference to window object
+console.log(windowRef1.foo, windowRef2.foo);  // logs 'bar', 'bar'
 
 /**
- * The Head Object Is Implied and Typically Not Referenced Explicitly 
+ * The Head Object Is Implied and Typically Not Referenced Explicitly
  */
-var foo = { // window is implied here, window.foo
+var foo = {                                   // window is implied here, window.foo
   fooMethod: function() {
-    alert('foo' + 'bar'); // window is implied here, window.alert
-    window.alert('foo' + 'bar'); /* window is explicitly used, with the same effect */
+    alert('foo' + 'bar');                     // window is implied here, window.alert
+    /* window is explicitly used, with the same effect */
+    window.alert('foo' + 'bar');
   } 
 }
 

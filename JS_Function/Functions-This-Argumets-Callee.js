@@ -5,10 +5,15 @@ console.log(add(4, 4)); // returns 8
 
 var myObject1 = {
   name: 'myObject1',
-  myMethod: function(){console.log(this);}
+  myMethod: function(){
+    console.log(this);
+  }
 };
 myObject1.myMethod(); // logs 'myObject1'
-var myObject2 = function(){console.log(this);}; 
+
+var myObject2 = function(){
+  console.log(this);
+}; 
 myObject2(); // logs window
 
 var foo = function foo() {

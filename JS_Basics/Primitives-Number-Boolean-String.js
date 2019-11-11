@@ -18,8 +18,9 @@ var myStringLiteral = 'male'; // primitive string value, not an object
 var myBoolean = new Boolean(false); // an object
 var myBooleanLiteral = false; // primitive boolean value, not an object 
 var myObject = new Object();
+
 // verify that literals are created from same constructor
-console.log(myNumber.constructor,myNumberLiteral.constructor);
+console.log(myNumber.constructor, myNumberLiteral.constructor);
 console.log(typeof myNumber + ' ' + typeof myNumberLiteral);
 console.log(myString.constructor,myStringLiteral.constructor);
 console.log(typeof myString + ' ' + typeof myStringLiteral);
@@ -31,21 +32,28 @@ console.log('++++++++++++++++++++++++++++++++++++++++');
 var myString = 'foo' // create a primitive string object
 var myStringCopy = myString; // copy its value into a new variable
 var myString = null; // manipulate the value stored in the myString variable
-/* The original value from myString was copied to myStringCopy. This is confirmed
-by updating the value of myString then checking the value of myStringCopy */
+/* 
+The original value from myString was copied to myStringCopy. 
+This is confirmed by updating the value of myString then checking the value of myStringCopy 
+*/
 console.log(myString, myStringCopy); // logs 'null foo'
 
 var price1 = 10;
 var price2 = 10;
 var price3 = new Number('10'); // a complex numeric object because new was used
 var price4 = price3;
-console.log(price1 === price2); // logs true
-/* logs false because price3 contains a complex number object and price 1 is
-a primitive value */
+
+// logs TRUE
+console.log(price1 === price2); 
+
+/* logs FALSE because price3 contains a complex number object and price 1 is a primitive value */
 console.log(price1 === price3);
-// logs true because complex values are equal by reference, not value
+
+// logs TRUE because complex values are equal by reference, not value
 console.log(price4 === price3);
+
 // what if we update the price4 variable to contain a primitive value?
 price4 = 10;
-console.log(price4 === price3); /* logs false: price4 is now primitive
-                                rather than complex */
+
+/* logs FALSE: price4 is now primitive rather than complex */
+console.log(price4 === price3); 
