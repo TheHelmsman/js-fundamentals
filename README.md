@@ -42,3 +42,5 @@
 -- This Refers to Head
 -- This With Call and Apply
 -- This With New
+- JS_Imperative_vs_Declarative
+-- JS Imp Vs Decl
