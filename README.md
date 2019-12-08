@@ -44,3 +44,5 @@
 -- This With New
 - JS_Imperative_vs_Declarative
 -- JS Imp Vs Decl
+- JS_HoC
+-- JS Hoc (High ordered Components)
